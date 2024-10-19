@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Fit Man</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Futbolcu Antrenman Programı</h1>
+        <nav>
+            <ul>
+                <li><a href="#egzersizler">Egzersizler</a></li>
+                <li><a href="#videolar">Eğitici Videolar</a></li>
+                <li><a href="#iletisim">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="egzersizler">
+        <h2>Gelişim Egzersizleri</h2>
+        <div class="exercise">
+            <h3>Top Kontrolü</h3>
+            <p>Topla temel kontrol hareketleri ve ayak hakimiyeti egzersizleri.</p>
+            <button onclick="playVideo('video1')">Videoyu İzle</button>
+        </div>
+
+        <div class="exercise">
+            <h3>Pas Çalışması</h3>
+            <p>Arkadaşlarınla oynayabileceğin eğlenceli passikko çalışmaları.</p>
+            <button onclick="playVideo('video2')">Videoyu İzle</button>
+        </div>
+
+        <div class="exercise">
+            <h3>Koordinasyon ve Denge</h3>
+            <p>Çocukların motor becerilerini geliştiren denge ve koordinasyon egzersizleri.</p>
+            <button onclick="playVideo('video3')">Videoyu İzle</button>
+        </div>
+    </section>
+
+    <section id="videolar">
+        <h2>Eğitici Videolar</h2>
+        <video id="video1" width="320" height="240" controls>
+            <source src="top-kontrolu.mp4" type="video/mp4">
+            Tarayıcınız bu videoyu desteklemiyor.
+        </video>
+        <video id="video2" width="320" height="240" controls>
+            <source src="pas-calismasi.mp4" type="video/mp4">
+            Tarayıcınız bu videoyu desteklemiyor.
+        </video>
+        <video id="video3" width="320" height="240" controls>
+            <source src="koordinasyon.mp4" type="video/mp4">
+            Tarayıcınız bu videoyu desteklemiyor.
+        </video>
+    </section>
+
+    <section id="iletisim">
+        <h2>Bize Ulaşın</h2>
+        <form>
+            <label for="name">İsim:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">E-posta:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Mesaj:</label><br>
+            <textarea id="message" name="message" required></textarea><br><br>
+
+            <button type="submit">Gönder</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; MasterFitMan Telif hakları saklıdır™</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
